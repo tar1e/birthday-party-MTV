@@ -25,35 +25,31 @@
     width: 100%;
     overflow: hidden;
   }
-  .card img {
+  .img-wrap {
+    position: relative;
+    line-height: 0;
+  }
+  .img-wrap img {
     display: block;
     width: 100%;
     height: auto;
   }
-  .actions {
-    padding: 20px 24px;
-    text-align: center;
+  .bottom-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30%;
+    display: block;
+    cursor: pointer;
   }
-  .btn {
-    display: inline-block;
-    background: #1f6feb;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 14px 32px;
-    border-radius: 999px;
-    transition: background .15s ease, transform .05s ease;
-  }
-  .btn:hover { background: #1158c7; }
-  .btn:active { transform: scale(.98); }
 </style>
 </head>
 <body>
   <div class="card">
-    <img src="invitation.jpg" alt="Приглашение">
-    <div class="actions">
-      <a class="btn" href="https://forms.yandex.ru/u/6af3482249af476fbbd2bea3" target="_blank" rel="noopener">НАЖМИ, ЧТОБЫ ЗАПОЛНИТЬ АНКЕТУ</a>
+    <div class="img-wrap">
+      <img src="invitation.jpg" alt="Приглашение">
+      <a class="bottom-link" href="https://forms.yandex.ru/u/6af3482249af476fbbd2bea3" target="_blank" rel="noopener" aria-label="НАЖМИ, ЧТОБЫ ЗАПОЛНИТЬ АНКЕТУ"></a>
     </div>
   </div>
 </body>
